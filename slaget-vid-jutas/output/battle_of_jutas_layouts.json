@@ -1,0 +1,355 @@
+{
+  "project": "The Battle of Jutas",
+  "style": "DC Comics realism — muted cold blues, greys, and golden accents",
+  "mood": "Heroic and tragic",
+  "pages": [
+    {
+      "page": 1,
+      "title": "The Finnish War",
+      "panels": [
+        {
+          "panel": "P1.1",
+          "file_name": "page01_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 92,
+            "h": 92
+          },
+          "type": "splash",
+          "description": "Full-page map of Northern Europe, 1808–1809. Red and blue troop arrows on parchment with frost overlay. Golden title 'SLAGET VID JUTAS'.",
+          "reference": "jutas-landscape.jpg"
+        }
+      ],
+      "layout_image": "page01_layout.png",
+      "text_file": "page01_text.txt"
+    },
+    {
+      "page": 2,
+      "title": "Prelude to Battle",
+      "panels": [
+        {
+          "panel": "P2.1",
+          "file_name": "page02_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 92,
+            "h": 29
+          },
+          "description": "Misty morning near Nykarleby; calm landscape and river.",
+          "reference": [
+            "nykarleby-1845.jpg",
+            "nykarleby-1849.jpg"
+          ]
+        },
+        {
+          "panel": "P2.2",
+          "file_name": "page02_panel02.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 36,
+            "w": 92,
+            "h": 29
+          },
+          "description": "Finnish troops preparing positions along road and river.",
+          "reference": [
+            "finnish-soldier-1.png",
+            "finnish-soldier-2.png"
+          ]
+        },
+        {
+          "panel": "P2.3",
+          "file_name": "page02_panel03.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 68,
+            "w": 92,
+            "h": 28
+          },
+          "description": "Messenger gallops into camp, horse rearing; dynamic diagonal frame.",
+          "reference": [
+            "finnish-soldier-3.png"
+          ]
+        }
+      ],
+      "layout_image": "page02_layout.png",
+      "text_file": "page02_text.txt"
+    },
+    {
+      "page": 3,
+      "title": "Von Döbeln’s Resolve",
+      "panels": [
+        {
+          "panel": "P3.1",
+          "file_name": "page03_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Exterior of small house in Nykarleby, soldier on guard.",
+          "reference": "vonDobeln-house.jpg"
+        },
+        {
+          "panel": "P3.2",
+          "file_name": "page03_panel02.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 4,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Interior: von Döbeln sick in bed, maps and papers around.",
+          "reference": "vonDobeln-house.jpg"
+        },
+        {
+          "panel": "P3.3",
+          "file_name": "page03_panel03.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 52,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Close-up: von Döbeln’s face, black headband, eyes burning with resolve.",
+          "reference": "von-dobeln.png"
+        },
+        {
+          "panel": "P3.4",
+          "file_name": "page03_panel04.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 52,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Döbeln gives orders to aides, pointing to map.",
+          "reference": "von-dobeln.png"
+        }
+      ],
+      "layout_image": "page03_layout.png",
+      "text_file": "page03_text.txt"
+    },
+    {
+      "page": 4,
+      "title": "The Field at Jutas",
+      "panels": [
+        {
+          "panel": "P4.1",
+          "file_name": "page04_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 92,
+            "h": 40
+          },
+          "description": "Panoramic view of Jutas village — calm before battle.",
+          "reference": "jutas-landscape.jpg"
+        },
+        {
+          "panel": "P4.2",
+          "file_name": "page04_panel02.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 48,
+            "w": 44,
+            "h": 48
+          },
+          "description": "Finnish troops behind fences and ridges, preparing defense.",
+          "reference": [
+            "finnish-soldier-1.png",
+            "finnish-soldier-2.png"
+          ]
+        },
+        {
+          "panel": "P4.3",
+          "file_name": "page04_panel03.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 48,
+            "w": 44,
+            "h": 48
+          },
+          "description": "Russian troops appear opposite, officer shouting through smoke.",
+          "reference": "russian-soldier.png"
+        }
+      ],
+      "layout_image": "page04_layout.png",
+      "text_file": "page04_text.txt"
+    },
+    {
+      "page": 5,
+      "title": "The Battle Ignites",
+      "panels": [
+        {
+          "panel": "P5.1",
+          "file_name": "page05_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Musket fire across the field; thick smoke and chaos."
+        },
+        {
+          "panel": "P5.2",
+          "file_name": "page05_panel02.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 4,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Von Döbeln rides forward, sword raised, halo of light.",
+          "reference": "von-dobeln.png"
+        },
+        {
+          "panel": "P5.3",
+          "file_name": "page05_panel03.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 52,
+            "w": 44,
+            "h": 44
+          },
+          "description": "Finnish troops surge ahead through the smoke.",
+          "reference": [
+            "finnish-soldier-2.png",
+            "finnish-soldier-3.png"
+          ]
+        },
+        {
+          "panel": "P5.4",
+          "file_name": "page05_panel04.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 52,
+            "w": 44,
+            "h": 44
+          },
+          "description": "A young soldier lifts fallen flag — heroic composition."
+        }
+      ],
+      "layout_image": "page05_layout.png",
+      "text_file": "page05_text.txt"
+    },
+    {
+      "page": 6,
+      "title": "Turning Point",
+      "panels": [
+        {
+          "panel": "P6.1",
+          "file_name": "page06_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 44,
+            "h": 40
+          },
+          "description": "Döbeln on horseback commanding counterattack, backlit by fire.",
+          "reference": "von-dobeln.png"
+        },
+        {
+          "panel": "P6.2",
+          "file_name": "page06_panel02.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 4,
+            "w": 44,
+            "h": 40
+          },
+          "description": "Finnish troops rush forward with bayonets, diagonal composition."
+        },
+        {
+          "panel": "P6.3",
+          "file_name": "page06_panel03.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 48,
+            "w": 92,
+            "h": 48
+          },
+          "description": "Russian troops retreat in smoke, sunset through haze."
+        }
+      ],
+      "layout_image": "page06_layout.png",
+      "text_file": "page06_text.txt"
+    },
+    {
+      "page": 7,
+      "title": "Aftermath",
+      "panels": [
+        {
+          "panel": "P7.1",
+          "file_name": "page07_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 92,
+            "h": 44
+          },
+          "description": "Battlefield at dusk; smoke and fallen soldiers."
+        },
+        {
+          "panel": "P7.2",
+          "file_name": "page07_panel02.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 52,
+            "w": 92,
+            "h": 44
+          },
+          "description": "Von Döbeln leaning on sword, looking over field in fading light."
+        }
+      ],
+      "layout_image": "page07_layout.png",
+      "text_file": "page07_text.txt"
+    },
+    {
+      "page": 8,
+      "title": "Legacy",
+      "panels": [
+        {
+          "panel": "P8.1",
+          "file_name": "page08_panel01.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 4,
+            "w": 92,
+            "h": 40
+          },
+          "description": "Modern teacher by Jutas memorial stone, autumn light.",
+          "reference": "jutas-memorial.jpg"
+        },
+        {
+          "panel": "P8.2",
+          "file_name": "page08_panel02.png",
+          "coords_percent": {
+            "x": 4,
+            "y": 48,
+            "w": 44,
+            "h": 48
+          },
+          "description": "Students listening; warm orange tone.",
+          "reference": "ulf.jpg"
+        },
+        {
+          "panel": "P8.3",
+          "file_name": "page08_panel03.png",
+          "coords_percent": {
+            "x": 52,
+            "y": 48,
+            "w": 44,
+            "h": 48
+          },
+          "description": "Close-up of stone inscription: 'Slaget vid Jutas — 13 september 1808.'"
+        }
+      ],
+      "layout_image": "page08_layout.png",
+      "text_file": "page08_text.txt"
+    }
+  ]
+}

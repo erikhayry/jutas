@@ -1,0 +1,466 @@
+# SLAGET VID JUTAS — DC COMICS STORYBOARD
+# Total Panels: 48
+# Characters: von Döbeln (lead), Swedish soldiers, Russian infantry, Teacher and students (modern scene)
+# Style: DC Comics realism — heroic and tragic
+# All speech bubbles and narration boxes are empty; text is stored separately.
+# For each page (1–8), also create a panel composition layout image:
+# – Empty rectangular panel outlines (4–6 per page)
+# – No artwork, only layout structure
+# – Helps visualize page composition and text placement.
+
+
+PANEL 1
+
+# PAGE 1 — Create panel composition layout image (empty panels only)
+
+Prompt: Create a DC Comics–style comic panel about the Finnish War of 1808.
+Scene: Overhead map of Sweden, Finland, and Russia with borders marked in red and arrows of troop movement. Smoke and fire glow across Finland’s coast.
+Mood: Epic, tragic.
+Style: DC Comics realism — bold inks, dynamic chiaroscuro, cinematic tone.
+Characters: None; focus on terrain and geography.
+Lighting: Cold blue-gray tones with glowing red lines symbolizing war.
+Notes: Speech boxes visible but empty. Text stored separately.
+
+PANEL 2
+Prompt: Burning Finnish village under storm clouds; refugees fleeing as soldiers march by.
+Scene: Flames rising from wooden cottages, women and children in the foreground, soldiers fading into smoke.
+Mood: Desperate and somber.
+Style: Gritty realism, smoke and ash motion.
+Characters: Civilians fleeing; faint silhouettes of Swedish troops.
+Lighting: Flickering orange firelight versus cold gray sky.
+Notes: Include empty narration boxes.
+
+PANEL 3
+Prompt: Swedish troops marching through muddy road, exhausted faces, rifles on shoulders.
+Scene: Narrow country road with churned mud, weary soldiers in formation.
+Mood: Grit and endurance.
+Style: Classic DC battle realism.
+Characters: Swedish soldiers, dirt-streaked, heads down.
+Lighting: Dim overcast light with muddy reflections.
+Notes: Include narration box placeholders.
+
+PANEL 4
+Prompt: Close-up of young soldier looking toward the horizon, firelight reflecting in eyes.
+Scene: Tight framing on determined expression.
+Mood: Hope within despair.
+Style: Cinematic focus, DC realism.
+Characters: Young Swedish soldier.
+Lighting: Warm orange reflection on face against blue-gray background.
+Notes: Empty narration box near upper corner.
+
+PANEL 5
+Prompt: Distant silhouette of von Döbeln in horizon mist, foreshadowing the hero’s arrival.
+Scene: Wide field shot, shadowy horseman barely visible.
+Mood: Foreboding, mythic.
+Style: Heroic DC tone, soft atmospheric haze.
+Characters: Silhouette of von Döbeln on horseback.
+Lighting: Pale dawn tones with faint halo around the figure.
+Notes: Include empty narration box.
+
+PANEL 6
+Prompt: Russian troops advance through misty field near Jutas.
+Scene: Cold open plains, rows of Russian soldiers in formation, bayonets glinting.
+Mood: Menacing, orderly.
+Style: DC realism, imperial menace.
+Characters: Russian infantry in green coats, officer in foreground.
+Lighting: Overcast winter light, gunmetal hues.
+Notes: Speech bubbles empty.
+
+PANEL 7
+
+# PAGE 2 — Create panel composition layout image (empty panels only)
+
+Prompt: Swedish soldiers crouched behind stone wall, watching Russian movement.
+Scene: Grassy field, stone wall foreground, mist behind.
+Mood: Anticipation, fear.
+Style: Realism with strong silhouettes.
+Characters: Two Swedish soldiers with muskets.
+Lighting: Low sun diffused through fog.
+Notes: Dialogue bubbles empty.
+
+PANEL 8
+Prompt: Soldiers whispering to each other, one pointing toward distant smoke.
+Scene: Mid-close shot of two men in cover.
+Mood: Tense, restrained.
+Style: DC battle realism.
+Characters: Two Swedish soldiers.
+Lighting: Mist-filtered, dim ambient.
+Notes: Include dialogue placeholders.
+
+PANEL 9
+Prompt: Russian column moving through haze; endless ranks stretching back.
+Scene: Side view showing military discipline and mass.
+Mood: Relentless advance.
+Style: Imperial symmetry, dark palette.
+Characters: Russian infantry, officer shouting orders.
+Lighting: Faint sunlight breaking through fog.
+Notes: Include narration box placeholder.
+
+PANEL 10
+Prompt: Close-up of soldier’s hand gripping musket tightly.
+Scene: Forearm and hand dominating frame, veins visible.
+Mood: Fear and resolve.
+Style: Hard-ink realism.
+Characters: Swedish soldier (unseen face).
+Lighting: Cold blue light on steel.
+Notes: Empty narration box.
+
+PANEL 11
+Prompt: Wide shot — horizon glowing orange, armies preparing for battle.
+Scene: Field edge, silhouettes of troops on both sides.
+Mood: Calm before storm.
+Style: Cinematic composition, DC chiaroscuro.
+Characters: Swedish and Russian formations.
+Lighting: Fiery sky against dark foreground.
+Notes: Include empty narration box.
+
+PANEL 12
+Prompt: Interior — von Döbeln’s quarters in Nykarleby, candlelight on maps.
+Scene: Rustic wooden room with map table, shadows flickering.
+Mood: Determined, weary.
+Style: DC realism, chiaroscuro light.
+Characters: von Döbeln lying in bed, black headband visible; orderly nearby.
+Lighting: Warm candlelight over cool shadows.
+Notes: Empty dialogue bubbles and narration.
+
+PANEL 13
+
+# PAGE 3 — Create panel composition layout image (empty panels only)
+
+Prompt: Close-up of Döbeln’s face — sweat and resolve.
+Scene: Head and shoulders only.
+Mood: Inner strength.
+Style: High contrast realism.
+Characters: von Döbeln.
+Lighting: Candlelight highlights his eyes, shadow across cheek.
+Notes: None.
+
+PANEL 14
+Prompt: Orderly at bedside, worried expression.
+Scene: Side composition showing power dynamic.
+Mood: Concerned loyalty.
+Style: Realistic anatomy, strong shading.
+Characters: Döbeln and orderly.
+Lighting: Dim interior, single candle.
+Notes: Dialogue bubble empty.
+
+PANEL 15
+Prompt: Döbeln pushes himself up, gripping map on table.
+Scene: Bed and table visible; coat and scarf hang behind.
+Mood: Willpower against weakness.
+Style: Dramatic DC panel.
+Characters: von Döbeln.
+Lighting: Candle flare highlighting his movement.
+Notes: Include empty narration.
+
+PANEL 16
+Prompt: Extreme close-up — Döbeln’s lips as he whispers “Victory.”
+Scene: Cropped composition.
+Mood: Intense focus.
+Style: Cinematic micro shot.
+Characters: von Döbeln.
+Lighting: Candlelight reflection.
+Notes: Include empty dialogue box.
+
+PANEL 17
+Prompt: Candle flame reflected in Döbeln’s eye.
+Scene: Macro detail shot, metaphorical focus.
+Mood: Symbolic determination.
+Style: DC visual metaphor style.
+Characters: von Döbeln.
+Lighting: Golden candlelight reflection.
+Notes: Include narration placeholder.
+
+PANEL 18
+Prompt: Dawn mist over Jutas river, sunlight breaking through fog.
+Scene: Wide landscape, stillness.
+Mood: Anticipation.
+Style: Atmospheric realism.
+Characters: None yet visible.
+Lighting: Pale blue dawn light.
+Notes: Narration box empty.
+
+PANEL 19
+
+# PAGE 4 — Create panel composition layout image (empty panels only)
+
+Prompt: Swedish troops preparing cannons near stream.
+Scene: Men positioning artillery on damp grass.
+Mood: Gritty readiness.
+Style: DC battle realism.
+Characters: Swedish artillery crew.
+Lighting: Soft morning glow and shadows.
+Notes: Include empty dialogue boxes.
+
+PANEL 20
+Prompt: Officers pointing toward distant ridge where Russians hold position.
+Scene: Half-figure composition with visible ridge.
+Mood: Tactical anticipation.
+Style: Military realism, clean lines.
+Characters: Swedish officers gesturing.
+Lighting: Mist and faint sun.
+Notes: Include narration placeholder.
+
+PANEL 21
+Prompt: Half-page splash — von Döbeln rides in through mist, scarf fluttering.
+Scene: Dynamic entrance, soldiers turning toward him.
+Mood: Heroic, electric.
+Style: Classic DC splash-panel energy.
+Characters: von Döbeln on horseback, soldiers around.
+Lighting: Bright halo behind Döbeln, fog scattering light.
+Notes: Empty dialogue boxes.
+
+PANEL 22
+Prompt: Soldiers reacting, inspired faces turning to Döbeln.
+Scene: Group scene showing renewed morale.
+Mood: Hopeful and intense.
+Style: DC ensemble composition.
+Characters: Swedish infantry and Döbeln.
+Lighting: Morning sun diffused by fog.
+Notes: Include empty narration box.
+
+PANEL 23
+
+# PAGE 5 — Create panel composition layout image (empty panels only)
+
+Prompt: Cannons firing, dirt and smoke bursting outward.
+Scene: Low angle near cannon mouth.
+Mood: Explosive start.
+Style: Dynamic ink lines, high energy.
+Characters: Swedish artillerymen.
+Lighting: Fire flashes, thick smoke.
+Notes: Empty SFX bubble “BOOM!” placeholder.
+
+PANEL 24
+Prompt: Russian infantry advancing through fog, bayonets forward.
+Scene: Marching formation disappearing into haze.
+Mood: Relentless menace.
+Style: Imperial tone, DC realism.
+Characters: Russian soldiers.
+Lighting: Cold white fog, musket flashes.
+Notes: Include empty narration box.
+
+PANEL 25
+Prompt: Swedish soldiers firing back from behind cover.
+Scene: Mid-range, muskets discharging.
+Mood: Chaos.
+Style: Dynamic realism.
+Characters: Swedish troops.
+Lighting: Muzzle flashes and smoke.
+Notes: Empty dialogue and SFX boxes.
+
+PANEL 26
+Prompt: Döbeln shouting orders on horseback, sword raised.
+Scene: Heroic side angle, cloak and scarf in wind.
+Mood: Leadership under fire.
+Style: Heroic DC tone.
+Characters: von Döbeln.
+Lighting: Backlit smoke and gunfire glows.
+Notes: Empty dialogue box.
+
+PANEL 27
+Prompt: Close-up of musket flash lighting soldier’s grim face.
+Scene: Tight frame, focus on emotion.
+Mood: Fear and courage.
+Style: Cinematic realism.
+Characters: Swedish infantryman.
+Lighting: Firelight flare.
+Notes: Narration placeholder.
+
+PANEL 28
+Prompt: Wide smoky overview — two armies collide.
+Scene: Battlefield panorama, chaos and fog.
+Mood: Cataclysmic energy.
+Style: Grand DC realism.
+Characters: Both sides.
+Lighting: Flashing bursts from cannon and musket fire.
+Notes: Empty narration.
+
+PANEL 29
+
+# PAGE 6 — Create panel composition layout image (empty panels only)
+
+Prompt: Döbeln leading cavalry charge, sword pointing forward.
+Scene: Mounted troops charging through smoke.
+Mood: Triumph and fury.
+Style: Dynamic motion, motion blur lines.
+Characters: von Döbeln, Swedish cavalry.
+Lighting: Noon sunlight cutting through dust.
+Notes: Include SFX placeholder “THUNDER OF HOOVES!”
+
+PANEL 30
+Prompt: Cavalry breaking Russian line.
+Scene: Horses colliding with infantry ranks.
+Mood: Fierce and chaotic.
+Style: Gritty realism.
+Characters: Swedish cavalry and Russian soldiers.
+Lighting: Harsh sunlight, shadows cast by dust.
+Notes: Narration placeholder.
+
+PANEL 31
+Prompt: Russian troops falling back through haze.
+Scene: Retreating silhouettes.
+Mood: Turning point.
+Style: Realistic motion, DC ink shading.
+Characters: Russian soldiers.
+Lighting: Dust-filtered sunlight.
+Notes: Include narration.
+
+PANEL 32
+Prompt: Swedish banner lifted high on ridge.
+Scene: Soldier waving flag in smoky wind.
+Mood: Victory rising.
+Style: Heroic composition.
+Characters: Flag-bearer, soldiers cheering.
+Lighting: Golden shafts through smoke.
+Notes: Narration placeholder.
+
+PANEL 33
+Prompt: Döbeln close-up — calm face amid victory chaos.
+Scene: Tight portrait.
+Mood: Stoic leadership.
+Style: Chiaroscuro realism.
+Characters: von Döbeln.
+Lighting: Warm highlights, cold shadows.
+Notes: Empty narration.
+
+PANEL 34
+Prompt: Wide shot — Swedish soldiers standing victorious.
+Scene: Ridge with smoke clearing behind them.
+Mood: Exhausted triumph.
+Style: Grand DC realism.
+Characters: Swedish infantry.
+Lighting: Sun low in afternoon.
+Notes: Narration placeholder.
+
+PANEL 35
+
+# PAGE 7 — Create panel composition layout image (empty panels only)
+
+Prompt: Battlefield after silence; fallen soldiers everywhere.
+Scene: Ground littered with weapons, broken flags.
+Mood: Sorrow.
+Style: Somber realism.
+Characters: None or faint silhouettes.
+Lighting: Twilight red light.
+Notes: Include narration placeholder.
+
+PANEL 36
+Prompt: Döbeln dismounted, walking among wounded.
+Scene: Ground-level shot, somber pacing.
+Mood: Reflection.
+Style: Emotional realism.
+Characters: von Döbeln.
+Lighting: Orange sunset.
+Notes: Narration box empty.
+
+PANEL 37
+Prompt: Soldier reports to Döbeln, both weary.
+Scene: Mid-shot, quiet aftermath.
+Mood: Mutual respect.
+Style: Realistic anatomy, subtle expression.
+Characters: von Döbeln and Swedish soldier.
+Lighting: Fading light.
+Notes: Empty dialogue box.
+
+PANEL 38
+Prompt: Close-up of Döbeln’s face, grief and fatigue visible.
+Scene: Frontal portrait.
+Mood: Sorrow and dignity.
+Style: Heroic melancholy.
+Characters: von Döbeln.
+Lighting: Red-gold sky reflection.
+Notes: Narration placeholder.
+
+PANEL 39
+Prompt: Wide panel — sunset over Jutas river, silhouettes of crosses.
+Scene: Landscape epilogue.
+Mood: Solemn.
+Style: Poetic realism.
+Characters: Distant soldiers.
+Lighting: Orange horizon glow.
+Notes: Narration placeholder.
+
+PANEL 40
+
+# PAGE 8 — Create panel composition layout image (empty panels only)
+
+Prompt: Modern day — tall grass moving around Jutas memorial.
+Scene: Peaceful field, stone monument center.
+Mood: Reflective.
+Style: Clean modern realism.
+Characters: None visible yet.
+Lighting: Cool daylight, gentle wind.
+Notes: Empty narration.
+
+PANEL 41
+Prompt: Teacher leading small group of students toward memorial.
+Scene: Foreground teacher, children behind.
+Mood: Reverent.
+Style: Contemporary realism, calm colors.
+Characters: Male teacher, students.
+Lighting: Afternoon light.
+Notes: Dialogue boxes empty.
+
+PANEL 42
+Prompt: Student looking up curiously at memorial.
+Scene: Close-up of child’s face with stone background.
+Mood: Thoughtful.
+Style: Warm modern realism.
+Characters: One student.
+Lighting: Soft sunlight.
+Notes: Dialogue placeholder.
+
+PANEL 43
+Prompt: Teacher speaking, gesturing toward monument.
+Scene: Mid-shot, composed and solemn.
+Mood: Respectful.
+Style: Documentary realism.
+Characters: Teacher.
+Lighting: Gentle side light.
+Notes: Dialogue box empty.
+
+PANEL 44
+Prompt: Close-up on teacher’s face — serious but kind expression.
+Scene: Focused head-and-shoulders portrait.
+Mood: Contemplative.
+Style: DC realism with modern tone.
+Characters: Teacher.
+Lighting: Natural outdoor light.
+Notes: Include dialogue placeholder.
+
+PANEL 45
+Prompt: Wide shot — students around memorial, wind moving grass.
+Scene: Balanced composition of past and present.
+Mood: Peaceful remembrance.
+Style: Cinematic realism.
+Characters: Teacher, students.
+Lighting: Late-day sun.
+Notes: Narration placeholder.
+
+PANEL 46
+Prompt: Memorial stone close-up — engraved text visible.
+Scene: Tight frame, texture detail.
+Mood: Reflective.
+Style: Realism.
+Characters: None.
+Lighting: Low sun glinting on stone.
+Notes: None.
+
+PANEL 47
+Prompt: Wide panel — sky above memorial, faint ghostly silhouettes of soldiers in clouds.
+Scene: Atmospheric symbolism.
+Mood: Poetic closure.
+Style: DC metaphorical realism.
+Characters: Ghostly forms of Döbeln and soldiers.
+Lighting: Evening glow through clouds.
+Notes: Narration placeholder.
+
+PANEL 48
+Prompt: Final panel — memorial in dusk light, grass bending in northern wind.
+Scene: Wide composition, calm conclusion.
+Mood: Hopeful and eternal.
+Style: DC poetic realism.
+Characters: None.
+Lighting: Cool twilight tones, long shadows.
+Notes: Empty narration box.
