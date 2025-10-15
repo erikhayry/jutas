@@ -1,0 +1,17 @@
+{
+  "panel": "5.2",
+  "file_name": "page05_panel02.png",
+  "coords_percent": {
+    "x": 52,
+    "y": 4,
+    "w": 44,
+    "h": 44
+  },
+  "description": "Von Döbeln charges forward on horseback through the smoke, sword raised high. His black headscarf and flowing coat create a dark silhouette framed by a glowing halo of battle light. Soldiers follow behind him, partially obscured by smoke. Dramatic DC Comics composition — diagonal motion, bold inks, and chiaroscuro lighting emphasizing leadership and resolve.",
+  "dialogs": [
+    {
+      "text": "Forward! For Finland and for honor!",
+      "person": "Von Döbeln"
+    }
+  ]
+}

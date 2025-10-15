@@ -1,0 +1,18 @@
+{
+  "panel": "3.4",
+  "file_name": "page03_panel04.png",
+  "coords_percent": {
+    "x": 52,
+    "y": 52,
+    "w": 44,
+    "h": 44
+  },
+  "description": "Von Döbeln, now seated at his bed’s edge, points toward a map spread on the table as two aides listen attentively. His black headscarf and coat create a dark focal point against the warm candlelight. The atmosphere is intense and resolute — DC Comics chiaroscuro realism with golden light against deep shadows.",
+  "dialogs": [
+    {
+      "text": "We strike first. The Russians must not gain the upper hand.",
+      "person": "Von Döbeln"
+    }
+  ],
+  "quotes": "‘Och Döbeln låg sjuk i sitt tält, men eld i hans blickar brann.’"
+}

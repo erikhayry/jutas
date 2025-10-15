@@ -1,0 +1,17 @@
+{
+  "panel": "3.3",
+  "file_name": "page03_panel03.png",
+  "coords_percent": {
+    "x": 4,
+    "y": 52,
+    "w": 44,
+    "h": 44
+  },
+  "description": "Close-up of von Döbeln’s face — eyes burning with determination beneath his black headscarf. Candlelight reflects in his pupils while deep shadows cut across his cheekbones. Bold DC Comics linework emphasizes resolve and tension; the color palette mixes cold blues with warm golden highlights.",
+  "dialogs": [
+    {
+      "text": "I may lie sick — but my place is in battle.",
+      "person": "Von Döbeln"
+    }
+  ]
+}

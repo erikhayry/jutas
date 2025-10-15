@@ -1,0 +1,18 @@
+{
+  "panel": "7.2",
+  "file_name": "page07_panel02.png",
+  "coords_percent": {
+    "x": 4,
+    "y": 52,
+    "w": 92,
+    "h": 44
+  },
+  "description": "Von Döbeln stands among the fallen, leaning on his sword as smoke drifts through the fading light. His black scarf and headband catch the last glow of sunset. The scene is quiet and reflective — DC Comics chiaroscuro realism with warm orange highlights fading into cold blue dusk.",
+  "dialogs": [
+    {
+      "text": "They fought like lions. Finland will remember.",
+      "person": "Von Döbeln"
+    }
+  ],
+  "narration": "The sick general had led one of the last Swedish victories of the war."
+}

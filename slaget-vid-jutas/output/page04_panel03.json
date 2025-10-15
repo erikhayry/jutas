@@ -1,0 +1,18 @@
+{
+  "panel": "4.3",
+  "file_name": "page04_panel03.png",
+  "coords_percent": {
+    "x": 52,
+    "y": 48,
+    "w": 44,
+    "h": 48
+  },
+  "description": "Russian troops appear on the far side of the open field, partially obscured by smoke and rising mist. An officer in a dark green coat stands forward, shouting orders with a raised sword. Composition emphasizes contrast between cold blue-grey Russian ranks and the warmer tones of the Finnish side. DC Comics realism with dynamic light cutting through smoke.",
+  "dialogs": [
+    {
+      "text": "Advance! Push them back!",
+      "person": "Russian officer"
+    }
+  ],
+  "narration": "The enemy had twice their number."
+}
