@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "24.7.2"
+  },
+  "dependencies": {
+    "@jest/globals": "30.2.0",
+    "zod": "4.1.12"
+  },
+  "name": "jutas-bundler",
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
