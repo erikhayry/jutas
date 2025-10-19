@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "bundle": "bun src/bundler/bundle.ts "
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "24.7.2"
