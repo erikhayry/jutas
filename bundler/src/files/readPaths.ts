@@ -1,7 +1,5 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import type {Comic} from "jutas-types";
+import {readPath} from "./readPath.ts";
 
-export function readPaths(files: string[]): string[] {
-  return files.map(file => fs.readFileSync(file, 'utf-8'));
+export function readPaths(filePaths: string[]): string[] {
+  return filePaths.map(readPath);
 }

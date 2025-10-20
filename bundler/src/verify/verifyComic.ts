@@ -1,9 +1,9 @@
-import {Comic} from "jutas-types";
+import {ComicOutput, PanelOutput} from "jutas-types";
 import {z} from "zod";
 
 export function verifyComic(data: any){
     try {
-        Comic.parse(data);
+        ComicOutput.parse(data);
         return true
     } catch (error) {
         if (error instanceof z.ZodError) {
