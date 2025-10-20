@@ -1,11 +1,26 @@
 import {
   type ComicOutput,
   type PageOutput,
+  PanelId,
   type PanelOutput,
 } from "jutas-types";
 import { getFolders } from "../files/getFolders.ts";
 import { getFileNames } from "../files/getFileNames.ts";
 import { readPath } from "../files/readPath.ts";
+import { verifyPanelOutput } from "../verify/verifyPanelOutput.ts";
+
+function outInvalidFilenames(fileName: string) {
+  try {
+    PanelId.parse(fileName.replace(".json", ""));
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+function getPanel(filePath: string) {
+  return JSON.parse(readPath(filePath));
+}
 
 function byName(a: string, b: string) {
   return a.localeCompare(b);
@@ -21,26 +36,48 @@ function getPageNumber(panelId: string) {
   )[0];
 }
 
-function toJSON(path: string): PageOutput[] {
-  const obj = getFileNames(`${path}/output`, ".json").reduce<
-    Record<number, string[]>
-  >((acc, fileName) => {
-    const filePath = `${path}/output/${fileName}`;
-    const pageNumber = getPageNumber(JSON.parse(readPath(filePath)).panel);
+function addToPageRecord(
+  pageRecord: Record<number, string[]>,
+  filePath: string,
+) {
+  const pageNumber = getPageNumber(getPanel(filePath).panel);
 
-    if (acc[pageNumber]) {
-      acc[pageNumber].push(filePath);
-    } else {
-      acc[pageNumber] = [filePath];
-    }
+  if (pageRecord[pageNumber]) {
+    pageRecord[pageNumber].push(filePath);
+  } else {
+    pageRecord[pageNumber] = [filePath];
+  }
 
-    return acc;
-  }, {});
+  return pageRecord;
+}
 
-  return Object.entries(obj).map(([pageNumber, panels]) => ({
+function getFileName(path: string, fileName: string) {
+  return `${path}/output/${fileName}`;
+}
+
+function getPageRecord(path: string) {
+  const toPageRecord = (
+    pageRecord: Record<number, string[]>,
+    fileName: string,
+  ) => addToPageRecord(pageRecord, getFileName(path, fileName));
+  const outInvalidPanelId = (fileName: string) =>
+    verifyPanelOutput(getPanel(getFileName(path, fileName)));
+
+  return getFileNames(`${path}/output`, ".json")
+    .filter(outInvalidFilenames)
+    .filter(outInvalidPanelId)
+    .reduce(toPageRecord, {});
+}
+
+function toPageOutput([pageNumber, panels]: [string, string[]]) {
+  return {
     number: Number.parseInt(pageNumber),
     panels,
-  }));
+  };
+}
+
+function getPages(path: string): PageOutput[] {
+  return Object.entries(getPageRecord(path)).map(toPageOutput);
 }
 
 function toComicOutput(comics: ComicOutput[], path: string) {
@@ -48,7 +85,7 @@ function toComicOutput(comics: ComicOutput[], path: string) {
     ...comics,
     {
       path,
-      pages: toJSON(path),
+      pages: getPages(path),
     },
   ];
 }

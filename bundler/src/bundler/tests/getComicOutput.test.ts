@@ -25,6 +25,10 @@ test("returns pages", () => {
         `${DIR}/comic-1/output/1.1.2.json`,
       ],
     },
+    {
+      number: 2,
+      panels: [`${DIR}/comic-1/output/2.1.1.json`],
+    },
   ]);
   expect(comic2!.pages).toEqual([]);
 });
