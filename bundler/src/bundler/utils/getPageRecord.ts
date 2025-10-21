@@ -1,5 +1,5 @@
 import { getPanel } from "./getPanel.ts";
-import { getValidPanelOutputs } from "./getValidPanelOutputs.ts";
+import { getPanelOutputs } from "./getPanelOutputs.ts";
 import { getOutputFilePath } from "./getOutputFilePath.ts";
 
 function getPageNumber(panelId: string) {
@@ -33,5 +33,5 @@ export function getPageRecord(path: string) {
     fileName: string,
   ) => addToPageRecord(pageRecord, getOutputFilePath(path, fileName));
 
-  return getValidPanelOutputs(path).reduce(toPageRecord, {});
+  return getPanelOutputs(path).reduce(toPageRecord, {});
 }

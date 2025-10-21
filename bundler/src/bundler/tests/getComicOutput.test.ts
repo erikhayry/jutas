@@ -7,9 +7,11 @@ test("returns empty array when no folders", () => {
   expect(getComicOutput("/NOOP")).toEqual([]);
 });
 
-test("return array with comic paths", () => {
-  const [comic1, comic2] = getComicOutput(DIR);
+test("return array with comic valid paths", () => {
+  const comics = getComicOutput(DIR);
+  const [comic1, comic2] = comics;
 
+  expect(comics).toHaveLength(2);
   expect(comic1!.path).toEqual(`${DIR}/comic-1`);
   expect(comic2!.path).toEqual(`${DIR}/comic-2`);
 });

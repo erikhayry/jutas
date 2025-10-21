@@ -1,6 +1,7 @@
 import { type ComicOutput, type PageOutput } from "jutas-types";
 import { getFolders } from "../files/getFolders.ts";
 import { getPageRecord } from "./utils/getPageRecord.ts";
+import { isValidComicOutput as outInvalidComicOutput } from "./utils/isValidComicOutput.ts";
 
 function byName(a: string, b: string) {
   return a.localeCompare(b);
@@ -29,7 +30,10 @@ function toComicOutput(comics: ComicOutput[], path: string) {
 
 export function getComicOutput(folderPath: string): ComicOutput[] {
   try {
-    return getFolders(folderPath).sort(byName).reduce(toComicOutput, []);
+    return getFolders(folderPath)
+      .filter(outInvalidComicOutput)
+      .sort(byName)
+      .reduce(toComicOutput, []);
   } catch (error) {
     console.log(error);
     return [];
