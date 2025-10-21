@@ -15,3 +15,5 @@ export const Comic = z.object({
 });
 
 export type Comic = z.infer<typeof Comic>;
+export type Page = z.infer<typeof Page>;
+export type Panel = z.infer<typeof Panel>;

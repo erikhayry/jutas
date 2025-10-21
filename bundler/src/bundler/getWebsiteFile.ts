@@ -1,5 +1,6 @@
 import type { Comic } from "jutas-types";
 import { getComicOutput } from "./getComicOutput.ts";
+import * as path from "node:path";
 
 function getComicFolder(path: string): string {
   const folders = path.split("/");
@@ -8,9 +9,12 @@ function getComicFolder(path: string): string {
 }
 
 export function getWebsiteFile(folderPath: string): Comic[] {
-  const output = getComicOutput(folderPath);
-
-  return output.map(({ path }) => ({
-    slug: getComicFolder(path),
+  return getComicOutput(folderPath).map(({ path: filePath, pages }) => ({
+    slug: getComicFolder(filePath),
+    pages: pages.map(({ panels }) => ({
+      panels: panels.map((filePath) => ({
+        id: path.basename(filePath).replace(".json", ""),
+      })),
+    })),
   }));
 }

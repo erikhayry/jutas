@@ -19,6 +19,12 @@ test("should return false if malformed panel data", () => {
   ).toBeFalsy();
 });
 
+test("should return false if no output files", () => {
+  expect(
+    isValidComicOutput(`${DIR}/comic-invalid-no-output-files`),
+  ).toBeFalsy();
+});
+
 test("should return false if image is missing", () => {
   expect(isValidComicOutput(`${DIR}/comic-invalid-no-image`)).toBeFalsy();
 });
