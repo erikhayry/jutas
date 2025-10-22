@@ -1,0 +1,15 @@
+{
+  "name": "jutas",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "bundle": "bun run --cwd ./bundler bundle"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

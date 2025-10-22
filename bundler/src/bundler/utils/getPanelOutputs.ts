@@ -1,5 +1,6 @@
-import { getFileNames } from "../../files/getFileNames.ts";
+import { getJSONS } from "../../files/getFileNames.ts";
+import { OUTPUT_FOLDER } from "../../constants.ts";
 
 export function getPanelOutputs(path: string) {
-  return getFileNames(`${path}/output`, ".json");
+  return getJSONS(`${path}/${OUTPUT_FOLDER}`);
 }

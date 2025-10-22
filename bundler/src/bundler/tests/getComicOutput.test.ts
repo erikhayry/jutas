@@ -1,5 +1,6 @@
 import { expect, test } from "bun:test";
 import { getComicOutput } from "../getComicOutput.ts";
+import { OUTPUT_FOLDER } from "../../constants.ts";
 
 const DIR = "src/bundler/tests/mocks";
 
@@ -22,20 +23,20 @@ test("returns pages", () => {
   expect(comic1!.pages).toEqual([
     {
       panels: [
-        `${DIR}/comic-1/output/1.1.1.json`,
-        `${DIR}/comic-1/output/1.1.2.json`,
+        `${DIR}/comic-1/${OUTPUT_FOLDER}/1.1.1.json`,
+        `${DIR}/comic-1/${OUTPUT_FOLDER}/1.1.2.json`,
       ],
     },
     {
-      panels: [`${DIR}/comic-1/output/1.2.1.json`],
+      panels: [`${DIR}/comic-1/${OUTPUT_FOLDER}/1.2.1.json`],
     },
     {
-      panels: [`${DIR}/comic-1/output/2.1.1.json`],
+      panels: [`${DIR}/comic-1/${OUTPUT_FOLDER}/2.1.1.json`],
     },
   ]);
   expect(comic2!.pages).toEqual([
     {
-      panels: [`${DIR}/comic-2/output/1.1.1.json`],
+      panels: [`${DIR}/comic-2/${OUTPUT_FOLDER}/1.1.1.json`],
     },
   ]);
 });

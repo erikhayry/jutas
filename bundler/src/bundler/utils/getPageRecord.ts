@@ -1,9 +1,10 @@
 import { getPanel } from "./getPanel.ts";
 import { getPanelOutputs } from "./getPanelOutputs.ts";
 import { getOutputFilePath } from "./getOutputFilePath.ts";
+import { removeExtension } from "../../files/removeExtension.ts";
 
 function getPageNumber(panelId: string) {
-  const idTuplet = panelId.replace(".json", "").split(".") as [
+  const idTuplet = removeExtension(panelId).split(".") as [
     string,
     string,
     string,

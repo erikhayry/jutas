@@ -3,27 +3,24 @@ import { copyFile, copyFiles } from "../copy.ts";
 import { getPaths } from "../getPaths.ts";
 import { DIR } from "./getPaths.test.ts";
 import * as fs from "node:fs";
-import { getFileNames } from "../getFileNames.ts";
+import { DATA_EXTENSION, OUTPUT_FOLDER } from "../../constants.ts";
+import { getJSONS } from "../getFileNames.ts";
 
-export const OUTPUT_DIR = `${DIR}/output`;
+export const OUTPUT_DIR = `${DIR}/${OUTPUT_FOLDER}`;
 
 describe("copyFiles", () => {
   test("copy files to target", () => {
-    copyFiles(getPaths(DIR, ".json"), OUTPUT_DIR);
+    copyFiles(getPaths(DIR, DATA_EXTENSION), OUTPUT_DIR);
 
-    expect(getFileNames(OUTPUT_DIR, ".json")).toEqual(
-      getFileNames(DIR, ".json"),
-    );
+    expect(getJSONS(OUTPUT_DIR)).toEqual(getJSONS(DIR));
   });
 });
 
 describe("copyFile", () => {
   test("copy file to target", () => {
-    copyFile(getPaths(DIR, ".json")[0]!, OUTPUT_DIR);
+    copyFile(getPaths(DIR, DATA_EXTENSION)[0]!, OUTPUT_DIR);
 
-    expect(getFileNames(OUTPUT_DIR, ".json")[0]!).toEqual(
-      getFileNames(DIR, ".json")[0]!,
-    );
+    expect(getJSONS(OUTPUT_DIR)[0]!).toEqual(getJSONS(DIR)[0]!);
   });
 });
 

@@ -1,12 +1,14 @@
-import { getFileNames } from "../../files/getFileNames.ts";
+import { getImages, getJSONS } from "../../files/getFileNames.ts";
 import { PanelId } from "jutas-types";
 import { verifyPanelOutput } from "../../verify/verifyPanelOutput.ts";
 import { getPanel } from "./getPanel.ts";
 import { getOutputFilePath } from "./getOutputFilePath.ts";
+import { removeExtension } from "../../files/removeExtension.ts";
+import { IMAGE_EXTENSION, OUTPUT_FOLDER } from "../../constants.ts";
 
 function isInvalidFilenames(fileName: string) {
   try {
-    PanelId.parse(fileName.replace(".json", ""));
+    PanelId.parse(removeExtension(fileName));
     return false;
   } catch (error) {
     return true;
@@ -14,7 +16,7 @@ function isInvalidFilenames(fileName: string) {
 }
 
 function getPanelDataFiles(folderPath: string) {
-  return getFileNames(`${folderPath}/output`, ".json");
+  return getJSONS(`${folderPath}/${OUTPUT_FOLDER}`);
 }
 
 function getPanelId(filePath: string) {
@@ -22,8 +24,8 @@ function getPanelId(filePath: string) {
 }
 
 function hasImage(path: string, panelId: string) {
-  return getFileNames(`${path}/output`, ".png").some(
-    (imageFileName) => imageFileName === `${panelId}.png`,
+  return getImages(`${path}/${OUTPUT_FOLDER}`).some(
+    (imageFileName) => imageFileName === `${panelId}${IMAGE_EXTENSION}`,
   );
 }
 
