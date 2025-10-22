@@ -17,7 +17,6 @@ function addToPageRecord(
   filePath: string,
 ) {
   const pageNumber = getPageNumber(getPanel(filePath).panel);
-  console.log(pageNumber);
   if (pageRecord[pageNumber]) {
     pageRecord[pageNumber].push(filePath);
   } else {
