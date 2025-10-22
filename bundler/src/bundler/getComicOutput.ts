@@ -7,15 +7,12 @@ function byName(a: string, b: string) {
   return a.localeCompare(b);
 }
 
-function toPageOutput([pageNumber, panels]: [string, string[]]) {
-  return {
-    number: Number.parseInt(pageNumber),
-    panels,
-  };
+function toPageOutput(panels: string[]): PageOutput {
+  return { panels };
 }
 
 function getPages(path: string): PageOutput[] {
-  return Object.entries(getPageRecord(path)).map(toPageOutput);
+  return Object.values(getPageRecord(path)).map(toPageOutput);
 }
 
 function toComicOutput(comics: ComicOutput[], path: string) {

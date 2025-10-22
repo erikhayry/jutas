@@ -26,7 +26,6 @@ export const PanelOutput = z.object({
 });
 
 export const PageOutput = z.object({
-  number: z.number(),
   panels: z.array(z.string()),
 });
 

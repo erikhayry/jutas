@@ -21,20 +21,20 @@ test("returns pages", () => {
 
   expect(comic1!.pages).toEqual([
     {
-      number: 1,
       panels: [
         `${DIR}/comic-1/output/1.1.1.json`,
         `${DIR}/comic-1/output/1.1.2.json`,
       ],
     },
     {
-      number: 2,
+      panels: [`${DIR}/comic-1/output/1.2.1.json`],
+    },
+    {
       panels: [`${DIR}/comic-1/output/2.1.1.json`],
     },
   ]);
   expect(comic2!.pages).toEqual([
     {
-      number: 1,
       panels: [`${DIR}/comic-2/output/1.1.1.json`],
     },
   ]);

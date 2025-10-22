@@ -3,21 +3,21 @@ import { getPanelOutputs } from "./getPanelOutputs.ts";
 import { getOutputFilePath } from "./getOutputFilePath.ts";
 
 function getPageNumber(panelId: string) {
-  return (
-    panelId.replace(".json", "").split(".").map(Number) as [
-      number,
-      number,
-      number,
-    ]
-  )[0];
+  const idTuplet = panelId.replace(".json", "").split(".") as [
+    string,
+    string,
+    string,
+  ];
+
+  return `${idTuplet[0]}.${idTuplet[1]}`;
 }
 
 function addToPageRecord(
-  pageRecord: Record<number, string[]>,
+  pageRecord: Record<string, string[]>,
   filePath: string,
 ) {
   const pageNumber = getPageNumber(getPanel(filePath).panel);
-
+  console.log(pageNumber);
   if (pageRecord[pageNumber]) {
     pageRecord[pageNumber].push(filePath);
   } else {
