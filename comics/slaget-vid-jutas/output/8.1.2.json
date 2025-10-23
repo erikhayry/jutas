@@ -1,0 +1,17 @@
+{
+  "panel": "8.1.2",
+  "file_name": "page08_panel02.png",
+  "coords_percent": {
+    "x": 4,
+    "y": 48,
+    "w": 44,
+    "h": 48
+  },
+  "description": "A group of students listens attentively to the teacher near the Jutas memorial. Autumn leaves fall around them, and warm orange sunlight filters through the trees. The tone is calm and respectful — DC Comics modern realism with clean lines, soft color palette, and gentle chiaroscuro light across faces.",
+  "dialogs": [
+    {
+      "text": "At Jutas, courage outweighed strength. That is why we still speak of Döbeln.",
+      "person": "Teacher"
+    }
+  ]
+}
