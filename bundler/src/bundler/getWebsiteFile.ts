@@ -1,4 +1,11 @@
-import type { Comic, ComicOutput, Page, PageOutput, Panel } from "jutas-types";
+import {
+  type Comic,
+  type ComicOutput,
+  type Page,
+  type PageOutput,
+  type Panel,
+  Website,
+} from "jutas-types";
 import { getComicOutput } from "./getComicOutput.ts";
 import * as path from "node:path";
 import { removeExtension } from "../files/removeExtension.ts";
@@ -28,6 +35,6 @@ function toComic({ path: filePath, pages }: ComicOutput): Comic {
   };
 }
 
-export function getWebsiteFile(folderPath: string): Comic[] {
+export function getWebsiteFile(folderPath: string): Website {
   return getComicOutput(folderPath).map(toComic);
 }

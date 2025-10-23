@@ -1,33 +1,16 @@
-import { getFolders } from "../files/getFolders.ts";
-import { getImages, getJSONS } from "../files/getFileNames.ts";
-import { verifyPanelOutput } from "../verify/verifyPanelOutput.ts";
-import { readPath } from "../files/readPath.ts";
-import { OUTPUT_FOLDER } from "../constants.ts";
+import { getWebsiteFile } from "./getWebsiteFile.ts";
+import { createJSON } from "../files/createJSON.ts";
+import { copyComicImages } from "./utils/copyComicImages.ts";
 
-interface ComicFolder {
-  jsons: string[];
-  images: string[];
+export function bundle({
+  comicsFolder,
+  wwwFolder,
+  wwwFile,
+}: {
+  comicsFolder: string;
+  wwwFolder: string;
+  wwwFile: string;
+}) {
+  createJSON(wwwFolder, wwwFile, getWebsiteFile(comicsFolder));
+  copyComicImages(comicsFolder, wwwFolder);
 }
-
-function bundle() {
-  const comics = getFolders("./../comics").reduce<Record<string, ComicFolder>>(
-    (acc, folderPath) => {
-      acc[folderPath] = {
-        jsons: getJSONS(`${folderPath}/${OUTPUT_FOLDER}`)
-          .map((fileName) => `${folderPath}/${OUTPUT_FOLDER}/${fileName}`)
-          .filter((filePath) =>
-            verifyPanelOutput(JSON.parse(readPath(filePath))),
-          ),
-        images: getImages(`${folderPath}/${OUTPUT_FOLDER}`).map(
-          (fileName) => `${folderPath}/${OUTPUT_FOLDER}/${fileName}`,
-        ),
-      };
-      return acc;
-    },
-    {},
-  );
-
-  console.log(comics);
-}
-
-bundle();
