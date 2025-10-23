@@ -9,6 +9,8 @@ export const PanelId = z.string().regex(/^[1-9]\d*\.[1-9]\d*\.[1-9]\d*$/, {
   message:
     "Format must be number.number.number — no part can be zero (e.g. 1.2.3)",
 });
+export const PanelIdTuple = z.tuple([z.string(), z.string(), z.string()]);
+export type PanelIdTuple = z.infer<typeof PanelIdTuple>;
 
 export const PanelOutput = z.object({
   panel: PanelId,

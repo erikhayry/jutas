@@ -2,13 +2,10 @@ import { getPanel } from "./getPanel.ts";
 import { getPanelOutputs } from "./getPanelOutputs.ts";
 import { getOutputFilePath } from "./getOutputFilePath.ts";
 import { removeExtension } from "../../files/removeExtension.ts";
+import { PanelIdTuple } from "jutas-types";
 
 function getPageNumber(panelId: string) {
-  const idTuplet = removeExtension(panelId).split(".") as [
-    string,
-    string,
-    string,
-  ];
+  const idTuplet = PanelIdTuple.parse(removeExtension(panelId).split("."));
 
   return `${idTuplet[0]}.${idTuplet[1]}`;
 }
