@@ -2,7 +2,7 @@ import {describe, expect, test} from "vitest";
 import {getComic} from "../getComic";
 import {COMIC_MOCK} from "../../../../test/mock";
 
-describe('getComic', () => {
+describe('getPanel', () => {
     test('returns comic if matching exists', () => {
         expect(getComic(COMIC_MOCK.slug)).toEqual(COMIC_MOCK.slug)
     })
