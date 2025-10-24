@@ -11,7 +11,7 @@ describe('Comic page', () => {
         renderPage(Page, getComic(COMIC_MOCK.slug));
 
         const heading = page.getByRole('heading', {name: COMIC_MOCK.slug});
-        const image = page.getByRole('presentation');
+        const image = page.getByRole('img');
 
         await expect.element(heading).toBeInTheDocument();
         await expect.element(image).toBeInTheDocument();
