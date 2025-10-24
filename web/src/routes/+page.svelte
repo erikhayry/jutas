@@ -1,11 +1,12 @@
 <script lang="ts">
-    import data from '$lib/assets/data.json';
+    import {resolve} from '$app/paths';
+    import website from '$lib/assets/website.json';
 </script>
 
 <ul>
-{#each data as comic}
-    <li>
-        <a href={`/${comic.slug}`}>{comic.title}</a>
-    </li>
-{/each}
+    {#each website as comic (comic)}
+        <li>
+            <a href={resolve(`/${comic.slug}`)}>{comic.slug}</a>
+        </li>
+    {/each}
 </ul>

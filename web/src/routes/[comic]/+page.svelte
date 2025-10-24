@@ -1,20 +1,11 @@
 <script lang="ts">
-    import type { PageProps } from './$types';
+    import {resolve} from '$app/paths';
 
-    let { data }: PageProps = $props();
+    let {data} = $props();
 </script>
 
 
-<h1>{data.title}</h1>
-
-<ul>
-
-{#each data.pages as page, index}
-    <li>
-        <a href={`/${data.slug}/${index}`}>{page.title}</a>
-    </li>
-{/each}
-</ul>
+<h1>{data.slug}</h1>
 
 
-<a href="/">Back</a>
+<a href={resolve("/")}>Back</a>

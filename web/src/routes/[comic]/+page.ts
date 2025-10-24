@@ -1,10 +1,8 @@
-import { error } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
-import data from '$lib/assets/data.json';
+import {error} from '@sveltejs/kit';
+import {getComic} from "./utils/getComic";
 
-
-export const load: PageLoad = ({ params }) => {
-    const comic = data.find(({ slug}) => slug === params.comic)
+export const load = ({params}: { params: { comic: string } }) => {
+    const comic = getComic(params.comic)
 
     if (comic) {
         return comic
