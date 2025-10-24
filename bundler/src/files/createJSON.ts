@@ -1,11 +1,12 @@
 import * as fs from "node:fs";
+import type {WebConfig} from "../bundler/bundle.ts";
 
-export function createJSON(path: string, fileName: string, content: any) {
-  fs.mkdirSync(path, { recursive: true });
+export function createJSON(webConfig: WebConfig, content: any) {
+    fs.mkdirSync(webConfig.folder, {recursive: true});
 
-  fs.writeFileSync(
-    `${path}/${fileName}`,
-    JSON.stringify(content, null, 2),
-    "utf8",
-  );
+    fs.writeFileSync(
+        `${webConfig.folder}/${webConfig.file}`,
+        JSON.stringify(content, null, 2),
+        "utf8",
+    );
 }

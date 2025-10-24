@@ -1,7 +1,11 @@
-import { bundle } from "./bundler/src/bundler/bundle.ts";
+import {bundle} from "./bundler/src/bundler/bundle.ts";
 
 bundle({
-  wwwFolder: "www/src/lib/assets",
-  wwwFile: "website.json",
-  comicsFolder: "comics",
+    web: {gc
+        folder: "www/src/lib/assets",
+        file: "website.json",
+    },
+    comics: {
+        folder: "comics"
+    }
 });
