@@ -1,10 +1,10 @@
 import {describe, expect, test} from "vitest";
 import {getComic} from "../getComic";
-import website from "$lib/assets/website.json";
+import {COMIC_MOCK} from "../../../../test/mock";
 
 describe('getComic', () => {
     test('returns comic if matching exists', () => {
-        expect(getComic(website[0].slug)!.slug).toEqual(website[0].slug)
+        expect(getComic(COMIC_MOCK.slug)).toEqual(COMIC_MOCK.slug)
     })
 
     test('returns undefined if matching does not exists', () => {

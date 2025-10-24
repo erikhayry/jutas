@@ -1,5 +1,5 @@
-import website from "$lib/assets/website.json";
+import {getComics} from "../../../utils/getComics";
 
 export function getComic(comicSlug: string) {
-    return website.find(({slug}) => slug === comicSlug)
+    return getComics().find(({slug}) => slug === comicSlug)
 }
