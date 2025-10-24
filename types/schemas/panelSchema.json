@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[1-9]\\d*\\.[1-9]\\d*\\.[1-9]\\d*$"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "additionalProperties": false
+}

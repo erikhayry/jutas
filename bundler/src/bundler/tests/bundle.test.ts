@@ -9,6 +9,7 @@ const WWW_FOLDER_DIR = "src/bundler/tests/comicsOutput";
 const IMAGE_FOLDER = "src/bundler/tests/comicsOutput";
 const COMICS_FOLDER_DIR = "src/bundler/tests/mocks";
 const WWW_FILE = "website.json";
+const TYPE_FOLDER = "src/bundler/tests/type"
 
 const config: BundleConfig = {
     comics: {
@@ -17,6 +18,12 @@ const config: BundleConfig = {
     web: {
         folder: WWW_FOLDER_DIR,
         file: WWW_FILE
+    },
+    type: {
+        folder: TYPE_FOLDER,
+        schemas: {
+            panel: 'panelSchema.json'
+        }
     }
 };
 
@@ -40,6 +47,13 @@ test("should copy images", () => {
     expect(getImages(`${IMAGE_FOLDER}/comic-2`)).toEqual(["1.1.1.png"]);
 });
 
+test("should create json schema for panel", () => {
+    bundle(config);
+
+    expect(readPath(`${TYPE_FOLDER}/${config.type.schemas.panel}`)).toBeDefined()
+});
+
 afterEach(() => {
     fs.rmSync(WWW_FOLDER_DIR, {recursive: true, force: true});
+    fs.rmSync(TYPE_FOLDER, {recursive: true, force: true});
 });
