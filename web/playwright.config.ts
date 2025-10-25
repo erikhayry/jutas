@@ -10,7 +10,16 @@ export default defineConfig({
     testDir: 'e2e',
     projects: [
         {
-            name: "webkit",
-            use: {...devices["Desktop Safari"], headless: false},
-        }]
+            name: 'Wide',
+            use: {
+                ...devices['Desktop Chrome'],
+            },
+        },
+        {
+            name: 'Narrow',
+            use: {
+                ...devices['iPhone 13'],
+            },
+        },
+    ],
 });

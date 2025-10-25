@@ -18,7 +18,7 @@ async function gotoComic(comic: Comic, page: Page) {
     await page.goto('/');
 }
 
-test('comics', async ({page}) => {
+async function testComic(page: Page) {
     await page.goto('/');
     await expect(page).toHaveScreenshot('comics.png');
     const comics = getComics()
@@ -28,4 +28,8 @@ test('comics', async ({page}) => {
         await gotoComic(comics[testedComic]!, page)
         testedComic++
     }
+}
+
+test('comics', async ({page}) => {
+    await testComic(page)
 });
