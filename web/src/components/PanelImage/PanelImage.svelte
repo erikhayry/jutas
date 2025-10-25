@@ -14,6 +14,4 @@
 </script>
 
 
-{#if src}
-    <img {alt} {src}/>
-{/if}
+<img {alt} {src}/>

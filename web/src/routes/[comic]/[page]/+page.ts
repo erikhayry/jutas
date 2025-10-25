@@ -5,13 +5,14 @@ import type {Page} from "jutas-types";
 export const load = ({params: {comic: slug, page: pageIndex}}: { params: { comic: string, page: string } }): {
     page: Page,
     slug: string
-    pageNumber: number
+    title: string
+
 } => {
     const page = getPage(slug, parseInt(pageIndex))
 
     if (page) {
         return {
-            pageNumber: parseInt(pageIndex) + 1,
+            title: `${slug} | ${parseInt(pageIndex) + 1}`,
             page,
             slug,
         }

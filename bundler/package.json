@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "bundle": "bun src/bundler/bundle.ts "
+    "bundle": "bun src/bundler/bundle.ts",
+    "test": "bun test"
   },
   "devDependencies": {
     "@types/bun": "latest",

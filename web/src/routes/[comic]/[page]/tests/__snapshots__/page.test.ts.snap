@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Comic page load > should load error if not available 1`] = `
+HttpError {
+  "body": {
+    "message": "Not found",
+  },
+  "status": 404,
+}
+`;

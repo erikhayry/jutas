@@ -1,23 +1,20 @@
 import {page} from '@vitest/browser/context';
 import {describe, expect, it} from 'vitest';
 import Page from '../+page.svelte';
-import {getPage} from "../utils/getPage";
 import {renderPage} from "../../../../test/renderPage";
 import {COMIC_MOCK, PAGE_INDEX_MOCK} from "../../../../test/mock";
+import {load} from "../+page";
 
 
 describe('Comic page', () => {
     it('should render list comic', async () => {
-        renderPage(Page, {
-            page: getPage(COMIC_MOCK.slug, PAGE_INDEX_MOCK),
-            slug: COMIC_MOCK.slug,
-            pageNumber: PAGE_INDEX_MOCK + 1
-        });
+        const data = load({params: {comic: COMIC_MOCK.slug, page: PAGE_INDEX_MOCK.toString()}});
+        renderPage(Page, data);
 
-        const heading = page.getByRole('heading', {name: `${COMIC_MOCK.slug} | ${PAGE_INDEX_MOCK + 1}`});
-        const image = page.getByRole('img');
-
+        const heading = page.getByRole('heading', {name: data.title, level: 1});
         await expect.element(heading).toBeInTheDocument();
+
+        const image = page.getByRole('img');
         expect(image.elements()).toHaveLength(COMIC_MOCK.pages[PAGE_INDEX_MOCK].panels.length);
     });
 });
