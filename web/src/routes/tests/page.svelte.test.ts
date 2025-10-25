@@ -8,7 +8,7 @@ describe('comics page', () => {
     it('should render list of comics', async () => {
         render(Page);
 
-        const listItem = page.getByRole('link', {name: COMIC_MOCK.slug});
+        const listItem = page.getByRole('link', {name: COMIC_MOCK.slug, exact: true});
 
         expect(listItem.elements()).toHaveLength(1);
         await expect.element(listItem).toBeInTheDocument();
