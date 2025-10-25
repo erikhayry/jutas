@@ -1,4 +1,4 @@
-import website from '$lib/assets/website.json';
+import website from '$lib/assets/website.json' with {type: 'json'};
 
 export const COMIC_MOCK = website[0]!
 export const PAGE_INDEX_MOCK = 0

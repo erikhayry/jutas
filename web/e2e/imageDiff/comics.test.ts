@@ -1,5 +1,5 @@
 import {expect, type Page, test} from '@playwright/test';
-import {getComics} from "../src/utils/getComics.ts";
+import {getComics} from "../../src/utils/getComics.ts";
 import type {Comic} from "jutas-types";
 
 async function gotoComic(comic: Comic, page: Page) {
