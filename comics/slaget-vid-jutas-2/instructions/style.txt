@@ -1,0 +1,32 @@
+🦸‍♂️ DC COMICS–STYLE COMIC PROMPT TEMPLATE
+
+Prompt:
+Create a DC Comics–style comic page about [main character or event] set in [time/place].
+
+- Style: Classic DC Comics realism — dynamic poses, strong anatomy, bold ink outlines, cinematic lighting.
+- Mood: [choose: heroic / tragic / mysterious / epic / romantic / dark and gritty / hopeful].
+- Color palette: [choose: bold primary DC colors / muted cold tones / vintage sepia / metallic blues and reds].
+- Composition:
+  - 4–6 panels per page.
+  - Each panel should be created as a **separate image file**.
+  - Include one dramatic splash panel or close-up.
+  - Use angled perspectives, motion lines, and depth for energy.
+- Text & details:
+  - Speech bubbles and text boxes should be **empty** (no written text inside).
+  - All dialogue, narration, and sound effects should be stored in a **separate .txt file**.
+  - Bubble and box shapes should still be visible to indicate placement.
+  - Optional title text: [comic title] in DC-style lettering (can be included visually).
+- Lighting: High-contrast chiaroscuro — strong shadows, glowing highlights.
+- Background: [urban skyline / battlefield / alien planet / snowstorm / medieval castle / futuristic city].
+- Medium: Digital comic illustration or painted cover art.
+
+Example (filled in)
+Create a DC Comics–style comic page about Wilhelm von Schwerin set in 1808 Finland during the Battle of Jutas.
+- Style: Dramatic realism like Batman: Hush.
+- Mood: Heroic and tragic.
+- Colors: Muted blues, golds, and cold whites.
+- Composition: 6 panels; include one half-page splash with Schwerin on horseback, snowstorm swirling.
+- Output: Each panel generated as a separate image file.
+- Text: Speech bubbles and narration boxes visible but empty; text stored separately.
+- Effects: Smoke, wind, and musket fire motion lines.
+- Title: “SLAGET VID JUTAS” in golden serif DC-style lettering.

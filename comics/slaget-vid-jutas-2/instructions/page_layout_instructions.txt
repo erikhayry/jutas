@@ -1,0 +1,78 @@
+AI Instructions — Page Layout Images (Empty Panels with References)
+
+Goal
+Create one layout image per comic page. The image shows only empty panels (white boxes with black borders). Inside each panel, print the panel number and a reference to the future panel image filename. Do not draw any characters, backgrounds, or effects.
+
+Global rendering rules
+- Canvas: A4 portrait (2480×3508 px) or 4:5 ratio; safe margin 4% on all sides.
+- Background: solid white. Panel borders: #000, 6 px stroke, square corners.
+- Inside each panel, centered label in bold black sans-serif:
+  - Format: Page.Panel  →  filename.png
+  - Example: 2.1  →  page02_panel01.png
+- No shadows, no textures, no gradients. Pure blueprint look.
+- Export each page as: pageXX_layout.png (e.g., page02_layout.png).
+
+Label format (strict)
+- First line: big: P{page}.{panel}
+- Second line: small: → page{page padded 2}_panel{panel padded 2}.png
+- Example content inside panel 5.3:
+  - Line 1: P5.3
+  - Line 2: → page05_panel03.png
+
+Panel reference naming
+Follow this file scheme for the future panel art:
+- page01_panel01.png
+- page02_panel01.png, page02_panel02.png, …
+- Continue per page/panel.
+
+Layouts per page (coordinates in % of canvas)
+Coordinates are given as {x, y, w, h} with a 4% page margin already accounted for. Keep at least 1.5% gutter between panels.
+
+Page 1 — 1 panel (splash)
+- P1.1 → {x:4, y:4, w:92, h:92}
+
+Page 2 — 3 panels (stacked)
+- P2.1 → {x:4, y:4,   w:92, h:29}
+- P2.2 → {x:4, y:36,  w:92, h:29}
+- P2.3 → {x:4, y:68,  w:92, h:28}
+
+Page 3 — 4 panels (2×2 grid; Döbeln sequence)
+- Row 1:
+  - P3.1 → {x:4,  y:4,  w:44, h:44}
+  - P3.2 → {x:52, y:4,  w:44, h:44}
+- Row 2:
+  - P3.3 → {x:4,  y:52, w:44, h:44}
+  - P3.4 → {x:52, y:52, w:44, h:44}
+
+Page 4 — 3 panels (1 wide top, 2 bottom)
+- P4.1 → {x:4,  y:4,  w:92, h:40}
+- P4.2 → {x:4,  y:48, w:44, h:48}
+- P4.3 → {x:52, y:48, w:44, h:48}
+
+Page 5 — 4 panels (2×2 grid)
+- Row 1:
+  - P5.1 → {x:4,  y:4,  w:44, h:44}
+  - P5.2 → {x:52, y:4,  w:44, h:44}
+- Row 2:
+  - P5.3 → {x:4,  y:52, w:44, h:44}
+  - P5.4 → {x:52, y:52, w:44, h:44}
+
+Page 6 — 3 panels (2 top, 1 wide bottom)
+- P6.1 → {x:4,  y:4,  w:44, h:40}
+- P6.2 → {x:52, y:4,  w:44, h:40}
+- P6.3 → {x:4,  y:48, w:92, h:48}
+
+Page 7 — 2 panels (stacked)
+- P7.1 → {x:4, y:4,  w:92, h:44}
+- P7.2 → {x:4, y:52, w:92, h:44}
+
+Page 8 — 3 panels (1 wide top, 2 bottom)
+- P8.1 → {x:4,  y:4,  w:92, h:40}
+- P8.2 → {x:4,  y:48, w:44, h:48}
+- P8.3 → {x:52, y:48, w:44, h:48}
+
+Prompt template (paste into your image generator)
+Instruction:
+Create a clean comic page layout image (no art, just empty panels) on a white background with black panel borders (6 px). Use the panel rectangles below. Inside each panel, center this label on two lines: Line 1: P{page}.{panel}; Line 2: → page{pp}_panel{pp}.png. Keep a 4% outer margin and at least 1.5% gutters between panels. No shading, textures, or decorations. Export as page{pp}_layout.png.
+Panels (percent coords):
+{list the {x,y,w,h} blocks from the corresponding page above}

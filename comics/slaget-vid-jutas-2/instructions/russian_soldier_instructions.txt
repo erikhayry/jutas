@@ -1,0 +1,62 @@
+Russian Soldier — Finnish War 1808 (Antagonist Design Instructions)
+
+Overview:
+Cold, disciplined, imperial infantrymen from 1808 — faceless in formation, silhouettes heavy with wool coats and muskets. They should feel like the inexorable “machine” of the empire, set against the individuality and resolve of the Finnish-Swedish troops (e.g., von Döbeln).
+
+Style & Tone:
+- Art style: DC Comics realism — cinematic lighting, hard inks, crisp anatomy, atmospheric backgrounds.
+- Mood: Menacing, relentless, imperial authority — not monstrous, but cold and efficient.
+- Lighting: Winter overcast with flashes of musket fire or torchlight; use fog, snow, and smoke to enhance tension.
+- Contrast: Cold blue-grey palette for Russians vs. warm earth tones for Finns/Swedes.
+
+Historical Uniform Details (1808 Russian Infantry):
+- Coat: Dark green greatcoat or double-breasted uniform with tall standing collar; brass buttons.
+- Trousers: Grey or off-white wool; tucked into black boots.
+- Headgear: Shako or tall black hat with brass front plate; some may have fur caps in winter settings.
+- Gear: Leather belt with cartridge box, bayonet scabbard, musket with bayonet fixed.
+- Accents: Minimal red piping or insignia (collar edges, cuffs) — small but striking against dull green.
+- Weathering: Mud, frost, and powder smoke residue to emphasize campaign fatigue.
+
+Facial & Body Design:
+- Faces: Gaunt, serious, wind-burned; cheeks red from cold, expressions stern and emotionless.
+- Hair: Short, dark or brown, often hidden under headgear.
+- Beards: Short stubble or trimmed beards; rough appearance suits campaign conditions.
+- Expression cues: Determination, obedience, lack of warmth.
+- Posture: Straight, shoulders squared; hands steady on musket or sword.
+
+Visual Storytelling:
+- Silhouette: Strong vertical lines — tall shakos, upright stance, bayonets forming a wall of spikes.
+- Group behavior: Move in tight ranks; show coordination and unity rather than individuality.
+- Cinematic cues: Foggy battlefield, snow whirling, silhouettes through gun smoke, glints on bayonets.
+- Lighting: Low sun or firelight creating long shadows; use backlight to outline coats and helmets.
+
+Color Palette:
+Coat – Deep green / desaturated olive
+Trousers – Grey or off-white
+Leather gear – Dark brown / black
+Metal – Dull brass, iron
+Accents – Muted red piping / insignia
+Environment – Cold blue-grey snowlight, fog
+
+Poses & Scenes:
+1. March through snowstorm: soldiers in formation, bayonets catching light, fog obscuring faces.
+2. Line of fire: synchronized volley, musket smoke clouding the panel.
+3. Close-up officer: cold eyes under tall shako, small red insignia visible, jaw tight.
+4. Overrun scene: soldiers advancing through ruined Finnish village, torches glowing through smoke.
+5. Silent aftermath: silhouettes cleaning muskets in the snow, indifferent to destruction.
+
+Panel & Composition Rules (DC Template Integration):
+- Each panel is a separate image.
+- Keep speech bubbles empty; text stored separately in a .txt file.
+- Panels often framed with low angles (viewers looking up at Russians to enhance menace).
+- Include close-ups (faces, hands loading muskets, feet trampling snow) to contrast emotionless precision with Finnish resistance.
+- Use deep shadows and muted highlights on brass buttons or bayonet edges.
+
+Quick Variant Examples:
+1. Infantry in formation: full ranks, muskets raised, fog and snow around them.
+2. Officer leading charge: sabre raised, red piping visible on collar.
+3. Sharpshooter: kneeling in snow, musket aimed, breath cloud visible.
+4. Encampment: soldiers around low firelight, faces partially lit, silent expressions.
+
+Ethical / Creative Note:
+Keep them human and realistic — the antagonism should come from power, obedience, and contrast to the Finnish side’s individuality, not dehumanization or caricature.

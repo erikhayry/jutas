@@ -15,6 +15,8 @@
     "test:unit": "vitest run --coverage",
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright test",
+    "test:e2e:update": "npx playwright test --update-snapshots",
+    "test:e2e:ui ": "playwright test --ui",
     "test:browser": "vitest --config=vitest.browser.config.ts"
   },
   "devDependencies": {

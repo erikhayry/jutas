@@ -1,0 +1,18 @@
+{
+  "id": "6.1.1",
+  "file_name": "page06_panel01.png",
+  "coords": {
+    "x": 4,
+    "y": 4,
+    "w": 44,
+    "h": 40
+  },
+  "description": "Von Döbeln on horseback commands the field amid swirling smoke and firelight. His black scarf and coat catch the glow of the flames behind him. The horse rears slightly, emphasizing leadership and power. DC Comics realism with bold inks, chiaroscuro lighting, and strong diagonal composition for energy and authority.",
+  "narration": "The Russian left flank falters. Döbeln sees the moment.",
+  "dialogs": [
+    {
+      "text": "Now — drive them back!",
+      "person": "Von Döbeln"
+    }
+  ]
+}

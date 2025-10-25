@@ -1,0 +1,130 @@
+🎨 AI COMIC GENERATION INSTRUCTIONS
+Project: The Battle of Jutas
+Style: DC Comics–style historical war epic
+Pages: 1–8
+Panels: 23 total
+
+-------------------------------------------------------------
+🧩 GENERAL SETTINGS
+-------------------------------------------------------------
+Art style: Classic DC Comics realism — strong anatomy, bold outlines, dynamic poses, chiaroscuro lighting.
+Mood: Heroic and tragic.
+Color palette: Muted cold blues, greys, and golden accents.
+Medium: Digital comic illustration (one image per panel).
+Composition: 3–6 panels per page depending on storyboard layout.
+Lighting: High-contrast chiaroscuro; backlit by fire/smoke in battle scenes.
+Text handling:
+- Speech bubbles and narration boxes visible but empty.
+- All text (dialogue, narration, quotes) stored in a separate .txt file.
+- Title text may appear visually where indicated.
+
+-------------------------------------------------------------
+🧩 References
+-------------------------------------------------------------
+- info from: https://sv.wikipedia.org/wiki/Slaget_vid_Jutas
+- quotes from: https://runeberg.org/fstal/1r.html
+- page panel layout instructions page_layout_instructions.txt | battle_of_jutas_layouts.json
+
+-------------------------------------------------------------
+⚔️ PAGE-BY-PAGE INSTRUCTIONS
+-------------------------------------------------------------
+
+Page 1 – The Finnish War (1 panel, splash)
+- Overhead map of Northern Europe, 1808–1809.
+- Red/blue troop arrows, parchment texture with frost overlay.
+- Candlelight glow from one corner.
+- Title: “SLAGET VID JUTAS” in golden DC-style serif lettering.
+- Narration boxes along top/bottom (empty).
+- Mood: Epic introduction.
+- Reference: Jutas intro scene (jutas-landscape.jpg)
+
+Page 2 – Prelude to Battle (3 panels)
+Panel 2.1: Misty morning near Nykarleby; calm rural scene, faint river, fields.
+Panel 2.2: Finnish troops preparing positions, muskets ready, misty background.
+Panel 2.3: Messenger gallops into camp, horse rearing; dynamic diagonal frame.
+- Narration and one speech bubble (empty).
+- Mood: Quiet tension before battle.
+- References: Nykarleby scenes (nykarleby-1845.jpg, nykarleby-1849.jpg)
+
+Page 3 – Von Döbeln’s Resolve (4 panels)
+Panel 3.1: Exterior of small house in Nykarleby, soldier guard, pale dawn light.
+Panel 3.2: Interior: von Döbeln feverish in bed, maps and papers spread out.
+Panel 3.3: Close-up: von Döbeln’s eyes and black headscarf, burning determination.
+Panel 3.4: Döbeln giving orders to aides, pointing to map.
+- Speech bubbles visible (empty).
+- Lighting: High contrast; deep shadows.
+- Mood: Determined and intimate.
+- Reference: von Döbeln lies sick in house scene (vonDobeln-house.jpg)
+
+Page 4 – The Field at Jutas (3 panels)
+Panel 4.1: Panoramic of Jutas village, river, and open fields — calm before storm.
+Panel 4.2: Finnish troops behind fences; layered depth with trees and fences.
+Panel 4.3: Russian troops appear opposite side; officer shouting, smoke rising.
+- Mood: Rising tension.
+- Reference: Jutas intro scene (jutas-landscape.jpg)
+
+Page 5 – The Battle Ignites (4 panels)
+Panel 5.1: Musket fire across field; thick smoke, sparks, and motion lines.
+Panel 5.2: Döbeln rides forward, sword raised, illuminated halo behind.
+Panel 5.3: Finnish troops charging through smoke.
+Panel 5.4: Young soldier raising fallen flag — strong central composition.
+- Mood: Heroic and chaotic.
+- Lighting: Firelight flashes, swirling smoke.
+
+Page 6 – Turning Point (3 panels)
+Panel 6.1: Döbeln on horseback commanding; backlit by battle flames.
+Panel 6.2: Finnish bayonet charge, angled forward motion.
+Panel 6.3: Russian retreat in smoke; sunset through haze.
+- Mood: Triumphant energy.
+
+Page 7 – Aftermath (2 panels)
+Panel 7.1: Battlefield at dusk; smoke, fallen soldiers, cold blue tones.
+Panel 7.2: Döbeln standing, leaning on sword, fading light and long shadows.
+- Mood: Somber and reflective.
+
+Page 8 – Legacy (3 panels)
+Panel 8.1: Modern teacher by Jutas memorial stone; autumn colors.
+Panel 8.2: Students listening; warm orange tones.
+Panel 8.3: Close-up on stone inscription “Slaget vid Jutas — 13 september 1808.”
+- Final narration box (empty).
+- Mood: Calm and commemorative.
+- References: Jutas memorial scene (jutas-memorial.jpg, ulf.jpg)
+
+-------------------------------------------------------------
+📁 OUTPUT STRUCTURE
+-------------------------------------------------------------
+Each panel must be generated as a separate image file named:
+page01_panel01.png
+page02_panel01.png
+page02_panel02.png
+...
+page08_panel03.png
+
+All narration and dialogue text from the script must be stored separately as:
+page01_text.txt
+page02_text.txt
+...
+page08_text.txt
+
+-------------------------------------------------------------
+🖼️ IMAGE REFERENCE SUMMARY
+-------------------------------------------------------------
+Scene / Context | Reference Files
+-----------------|----------------
+Jutas intro scene | jutas-landscape.jpg
+Jutas memorial scene | jutas-memorial.jpg, ulf.jpg
+von Döbeln house scene | vonDobeln-house.jpg
+Nykarleby scenes | nykarleby-1845.jpg, nykarleby-1849.jpg
+
+-------------------------------------------------------------
+👥 CHARACTER REFERENCES
+-------------------------------------------------------------
+(Note: Ignore that the reference images are set in winter; adapt them to autumn or neutral season settings.)
+
+Character | Reference Files
+-----------|----------------
+Finnish soldier | finnish-soldier1.png, finnish-soldier2.png, finnish-soldier3.png | finnish-swedish_soldier_instructions.txt
+Russian soldier | russian-soldier.png | russian_soldier_instructions.txt
+Von Döbeln | von-dobeln.png | von_Döbeln_instructions.txt
+
+
