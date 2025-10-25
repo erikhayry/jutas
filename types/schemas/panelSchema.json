@@ -5,10 +5,35 @@
     "id": {
       "type": "string",
       "pattern": "^[1-9]\\d*\\.[1-9]\\d*\\.[1-9]\\d*$"
+    },
+    "coords": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "w": {
+          "type": "number"
+        },
+        "h": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "w",
+        "h"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
-    "id"
+    "id",
+    "coords"
   ],
   "additionalProperties": false
 }

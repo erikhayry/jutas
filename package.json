@@ -4,11 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "bundle": "bun run --cwd ./bundler bundle",
+    "bundle": "bun run test && bun run --cwd ./bundler bundle",
     "bundle:test": "bun run --cwd ./bundler test",
     "web:test": "bun run --cwd ./web test:unit",
     "test": "bun run web:test && bun run bundle:test",
-    "build:web": "bun run test && bun run --cwd ./web build"
+    "build:web": "bun run test && bun run --cwd ./web build",
+    "build": "bun index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
