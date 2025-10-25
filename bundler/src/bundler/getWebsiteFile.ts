@@ -1,40 +1,39 @@
-import {
-  type Comic,
-  type ComicOutput,
-  type Page,
-  type PageOutput,
-  type Panel,
-  Website,
-} from "jutas-types";
-import { getComicOutput } from "./getComicOutput.ts";
+import {type Comic, type ComicOutput, type Page, type PageOutput, type Panel, Website,} from "jutas-types";
+import {getComicOutput} from "./getComicOutput.ts";
 import * as path from "node:path";
-import { removeExtension } from "../files/removeExtension.ts";
+import {removeExtension} from "../files/removeExtension.ts";
 
 function getComicFolder(path: string): string {
-  const folders = path.split("/");
+    const folders = path.split("/");
 
-  return folders[folders.length - 1] || "";
+    return folders[folders.length - 1] || "";
 }
 
 function toPanel(filePath: string): Panel {
-  return {
-    id: removeExtension(path.basename(filePath)),
-  };
+    return {
+        id: removeExtension(path.basename(filePath)),
+        coords: {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+        }
+    };
 }
 
-function toPages({ panels }: PageOutput): Page {
-  return {
-    panels: panels.map(toPanel),
-  };
+function toPages({panels}: PageOutput): Page {
+    return {
+        panels: panels.map(toPanel),
+    };
 }
 
-function toComic({ path: filePath, pages }: ComicOutput): Comic {
-  return {
-    slug: getComicFolder(filePath),
-    pages: pages.map(toPages),
-  };
+function toComic({path: filePath, pages}: ComicOutput): Comic {
+    return {
+        slug: getComicFolder(filePath),
+        pages: pages.map(toPages),
+    };
 }
 
 export function getWebsiteFile(folderPath: string): Website {
-  return getComicOutput(folderPath).map(toComic);
+    return getComicOutput(folderPath).map(toComic);
 }

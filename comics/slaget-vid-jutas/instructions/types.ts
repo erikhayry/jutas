@@ -1,7 +1,7 @@
 interface Comic {
     "panel": string,
     "file_name": string,
-    "coords_percent": {
+    "coords": {
         "x": number,
         "y": number,
         "w": number,

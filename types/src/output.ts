@@ -13,14 +13,15 @@ export const PanelIdTuple = z.tuple([z.string(), z.string(), z.string()]);
 export type PanelIdTuple = z.infer<typeof PanelIdTuple>;
 export type PanelId = z.infer<typeof PanelId>;
 
+export const CoordsOutput = z.object({
+    x: z.number(),
+    y: z.number(),
+    w: z.number(),
+    h: z.number(),
+})
 export const PanelOutput = z.object({
     panel: PanelId,
-    coords_percent: z.object({
-        x: z.number(),
-        y: z.number(),
-        w: z.number(),
-        h: z.number(),
-    }),
+    coords: CoordsOutput,
     description: z.string(),
     narration: z.optional(z.string()),
     dialogs: z.optional(z.array(DialogOutput)),
@@ -37,6 +38,7 @@ export const ComicOutput = z.object({
     path: z.string(),
 });
 
+export type CoordsOutput = z.infer<typeof CoordsOutput>;
 export type PanelOutput = z.infer<typeof PanelOutput>;
 export type PageOutput = z.infer<typeof PageOutput>;
 export type ComicOutput = z.infer<typeof ComicOutput>;
