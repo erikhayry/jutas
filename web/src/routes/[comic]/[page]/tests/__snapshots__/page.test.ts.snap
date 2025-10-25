@@ -8,3 +8,12 @@ HttpError {
   "status": 404,
 }
 `;
+
+exports[`Comic page load should load error if not available 1`] = `
+HttpError {
+  "body": {
+    "message": "Not found",
+  },
+  "status": 404,
+}
+`;
