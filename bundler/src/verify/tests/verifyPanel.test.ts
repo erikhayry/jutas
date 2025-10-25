@@ -8,7 +8,7 @@ test("should return false if data not compliant", () => {
 
 test("should return true if data is compliant", () => {
     const panelOutput: PanelOutput = {
-        panel: "INVALID ID",
+        id: "INVALID ID",
         coords: {
             x: 100,
             y: 100,
@@ -23,7 +23,7 @@ test("should return true if data is compliant", () => {
 
 test("should return true if data is compliant", () => {
     const panelOutput: PanelOutput = {
-        panel: "1.1.1",
+        id: "1.1.1",
         coords: {
             x: 100,
             y: 100,

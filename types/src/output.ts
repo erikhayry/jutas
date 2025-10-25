@@ -19,8 +19,9 @@ export const CoordsOutput = z.object({
     w: z.number(),
     h: z.number(),
 })
+
 export const PanelOutput = z.object({
-    panel: PanelId,
+    id: PanelId,
     coords: CoordsOutput,
     description: z.string(),
     narration: z.optional(z.string()),
@@ -30,7 +31,7 @@ export const PanelOutput = z.object({
 });
 
 export const PageOutput = z.object({
-    panels: z.array(z.string()),
+    panels: z.array(PanelOutput),
 });
 
 export const ComicOutput = z.object({

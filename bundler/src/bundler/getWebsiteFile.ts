@@ -1,7 +1,5 @@
-import {type Comic, type ComicOutput, type Page, type PageOutput, type Panel, Website,} from "jutas-types";
+import {type Comic, type ComicOutput, type Page, type PageOutput, type Panel, PanelOutput, Website,} from "jutas-types";
 import {getComicOutput} from "./getComicOutput.ts";
-import * as path from "node:path";
-import {removeExtension} from "../files/removeExtension.ts";
 
 function getComicFolder(path: string): string {
     const folders = path.split("/");
@@ -9,16 +7,8 @@ function getComicFolder(path: string): string {
     return folders[folders.length - 1] || "";
 }
 
-function toPanel(filePath: string): Panel {
-    return {
-        id: removeExtension(path.basename(filePath)),
-        coords: {
-            "x": 0,
-            "y": 0,
-            "w": 0,
-            "h": 0
-        }
-    };
+function toPanel({id, coords}: PanelOutput): Panel {
+    return {id, coords};
 }
 
 function toPages({panels}: PageOutput): Page {

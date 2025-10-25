@@ -16,7 +16,7 @@ function getPanelDataFiles(folderPath: string) {
 }
 
 function getPanelId(filePath: string) {
-    return getPanel(filePath).panel;
+    return getPanel(filePath).id;
 }
 
 function hasImage(path: string, panelId: string) {

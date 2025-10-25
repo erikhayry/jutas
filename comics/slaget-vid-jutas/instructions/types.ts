@@ -1,5 +1,5 @@
 interface Comic {
-    "panel": string,
+    "id": string,
     "file_name": string,
     "coords": {
         "x": number,

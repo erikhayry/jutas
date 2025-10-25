@@ -1,14 +1,14 @@
 import {getFolders} from "../files/getFolders.ts";
 import {getPageRecord} from "./utils/getPageRecord.ts";
 import {isValidComicOutput as outInvalidComicOutput} from "./utils/isValidComicOutput.ts";
-import type {ComicOutput, PageOutput} from "jutas-types";
+import type {ComicOutput, PageOutput, PanelOutput} from "jutas-types";
 import {error} from "../logger/log.ts";
 
 function byName(a: string, b: string) {
     return a.localeCompare(b);
 }
 
-function toPageOutput(panels: string[]): PageOutput {
+function toPageOutput(panels: PanelOutput[]): PageOutput {
     return {panels};
 }
 

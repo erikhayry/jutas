@@ -1,34 +1,36 @@
-import { getPanel } from "./getPanel.ts";
-import { getPanelOutputs } from "./getPanelOutputs.ts";
-import { getOutputFilePath } from "./getOutputFilePath.ts";
-import { removeExtension } from "../../files/removeExtension.ts";
-import { PanelIdTuple } from "jutas-types";
+import {getPanel} from "./getPanel.ts";
+import {getPanelOutputs} from "./getPanelOutputs.ts";
+import {getOutputFilePath} from "./getOutputFilePath.ts";
+import {removeExtension} from "../../files/removeExtension.ts";
+import {PanelIdTuple, type PanelOutput} from "jutas-types";
 
 function getPageNumber(panelId: string) {
-  const idTuplet = PanelIdTuple.parse(removeExtension(panelId).split("."));
+    const idTuplet = PanelIdTuple.parse(removeExtension(panelId).split("."));
 
-  return `${idTuplet[0]}.${idTuplet[1]}`;
+    return `${idTuplet[0]}.${idTuplet[1]}`;
 }
 
 function addToPageRecord(
-  pageRecord: Record<string, string[]>,
-  filePath: string,
-) {
-  const pageNumber = getPageNumber(getPanel(filePath).panel);
-  if (pageRecord[pageNumber]) {
-    pageRecord[pageNumber].push(filePath);
-  } else {
-    pageRecord[pageNumber] = [filePath];
-  }
+    pageRecord: Record<string, PanelOutput[]>,
+    filePath: string,
+): Record<string, PanelOutput[]> {
+    const panelOutput = getPanel(filePath);
+    const pageNumber = getPageNumber(panelOutput.id);
 
-  return pageRecord;
+    if (pageRecord[pageNumber]) {
+        pageRecord[pageNumber].push(panelOutput);
+    } else {
+        pageRecord[pageNumber] = [panelOutput];
+    }
+
+    return pageRecord;
 }
 
 export function getPageRecord(path: string) {
-  const toPageRecord = (
-    pageRecord: Record<number, string[]>,
-    fileName: string,
-  ) => addToPageRecord(pageRecord, getOutputFilePath(path, fileName));
+    const toPageRecord = (
+        pageRecord: Record<number, PanelOutput[]>,
+        fileName: string,
+    ) => addToPageRecord(pageRecord, getOutputFilePath(path, fileName));
 
-  return getPanelOutputs(path).reduce(toPageRecord, {});
+    return getPanelOutputs(path).reduce(toPageRecord, {});
 }

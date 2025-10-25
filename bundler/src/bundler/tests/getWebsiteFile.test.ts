@@ -27,37 +27,38 @@ test("is should return pages", () => {
         panels: [{
             id: "1.1.1",
             coords: {
-                "x": 0,
-                "y": 0,
-                "w": 0,
-                "h": 0
+                "h": 92,
+                "w": 92,
+                "x": 4,
+                "y": 4,
+
             }
         }, {
             id: "1.1.2", coords: {
-                "x": 0,
-                "y": 0,
-                "w": 0,
-                "h": 0
+                "h": 100,
+                "w": 100,
+                "x": 4,
+                "y": 4
             }
         }],
     });
     expect(comic1.pages[1]).toEqual({
         panels: [{
             id: "1.2.1", coords: {
-                "x": 0,
-                "y": 0,
-                "w": 0,
-                "h": 0
+                "h": 92,
+                "w": 92,
+                "x": 4,
+                "y": 4,
             }
         },],
     });
     expect(comic1.pages[2]).toEqual({
         panels: [{
             id: "2.1.1", coords: {
-                "x": 0,
-                "y": 0,
-                "w": 0,
-                "h": 0
+                "h": 92,
+                "w": 92,
+                "x": 4,
+                "y": 4,
             }
         }],
     });
@@ -65,10 +66,10 @@ test("is should return pages", () => {
     expect(comic2.pages[0]).toEqual({
         panels: [{
             id: "1.1.1", coords: {
-                "x": 0,
-                "y": 0,
-                "w": 0,
-                "h": 0
+                "h": 92,
+                "w": 92,
+                "x": 4,
+                "y": 4,
             }
         }],
     });

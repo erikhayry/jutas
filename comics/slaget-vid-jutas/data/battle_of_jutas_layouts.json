@@ -8,7 +8,7 @@
       "title": "The Finnish War",
       "panels": [
         {
-          "panel": "P1.1",
+          "id": "P1.1",
           "file_name": "page01_panel01.png",
           "coords": {
             "x": 4,
@@ -29,7 +29,7 @@
       "title": "Prelude to Battle",
       "panels": [
         {
-          "panel": "P2.1",
+          "id": "P2.1",
           "file_name": "page02_panel01.png",
           "coords": {
             "x": 4,
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "panel": "P2.2",
+          "id": "P2.2",
           "file_name": "page02_panel02.png",
           "coords": {
             "x": 4,
@@ -59,7 +59,7 @@
           ]
         },
         {
-          "panel": "P2.3",
+          "id": "P2.3",
           "file_name": "page02_panel03.png",
           "coords": {
             "x": 4,
@@ -81,7 +81,7 @@
       "title": "Von Döbeln’s Resolve",
       "panels": [
         {
-          "panel": "P3.1",
+          "id": "P3.1",
           "file_name": "page03_panel01.png",
           "coords": {
             "x": 4,
@@ -93,7 +93,7 @@
           "reference": "vonDobeln-house.jpg"
         },
         {
-          "panel": "P3.2",
+          "id": "P3.2",
           "file_name": "page03_panel02.png",
           "coords": {
             "x": 52,
@@ -105,7 +105,7 @@
           "reference": "vonDobeln-house.jpg"
         },
         {
-          "panel": "P3.3",
+          "id": "P3.3",
           "file_name": "page03_panel03.png",
           "coords": {
             "x": 4,
@@ -117,7 +117,7 @@
           "reference": "von-dobeln.png"
         },
         {
-          "panel": "P3.4",
+          "id": "P3.4",
           "file_name": "page03_panel04.png",
           "coords": {
             "x": 52,
@@ -137,7 +137,7 @@
       "title": "The Field at Jutas",
       "panels": [
         {
-          "panel": "P4.1",
+          "id": "P4.1",
           "file_name": "page04_panel01.png",
           "coords": {
             "x": 4,
@@ -149,7 +149,7 @@
           "reference": "jutas-landscape.jpg"
         },
         {
-          "panel": "P4.2",
+          "id": "P4.2",
           "file_name": "page04_panel02.png",
           "coords": {
             "x": 4,
@@ -164,7 +164,7 @@
           ]
         },
         {
-          "panel": "P4.3",
+          "id": "P4.3",
           "file_name": "page04_panel03.png",
           "coords": {
             "x": 52,
@@ -184,7 +184,7 @@
       "title": "The Battle Ignites",
       "panels": [
         {
-          "panel": "P5.1",
+          "id": "P5.1",
           "file_name": "page05_panel01.png",
           "coords": {
             "x": 4,
@@ -195,7 +195,7 @@
           "description": "Musket fire across the field; thick smoke and chaos."
         },
         {
-          "panel": "P5.2",
+          "id": "P5.2",
           "file_name": "page05_panel02.png",
           "coords": {
             "x": 52,
@@ -207,7 +207,7 @@
           "reference": "von-dobeln.png"
         },
         {
-          "panel": "P5.3",
+          "id": "P5.3",
           "file_name": "page05_panel03.png",
           "coords": {
             "x": 4,
@@ -222,7 +222,7 @@
           ]
         },
         {
-          "panel": "P5.4",
+          "id": "P5.4",
           "file_name": "page05_panel04.png",
           "coords": {
             "x": 52,
@@ -241,7 +241,7 @@
       "title": "Turning Point",
       "panels": [
         {
-          "panel": "P6.1",
+          "id": "P6.1",
           "file_name": "page06_panel01.png",
           "coords": {
             "x": 4,
@@ -253,7 +253,7 @@
           "reference": "von-dobeln.png"
         },
         {
-          "panel": "P6.2",
+          "id": "P6.2",
           "file_name": "page06_panel02.png",
           "coords": {
             "x": 52,
@@ -264,7 +264,7 @@
           "description": "Finnish troops rush forward with bayonets, diagonal composition."
         },
         {
-          "panel": "P6.3",
+          "id": "P6.3",
           "file_name": "page06_panel03.png",
           "coords": {
             "x": 4,
@@ -283,7 +283,7 @@
       "title": "Aftermath",
       "panels": [
         {
-          "panel": "P7.1",
+          "id": "P7.1",
           "file_name": "page07_panel01.png",
           "coords": {
             "x": 4,
@@ -294,7 +294,7 @@
           "description": "Battlefield at dusk; smoke and fallen soldiers."
         },
         {
-          "panel": "P7.2",
+          "id": "P7.2",
           "file_name": "page07_panel02.png",
           "coords": {
             "x": 4,
@@ -313,7 +313,7 @@
       "title": "Legacy",
       "panels": [
         {
-          "panel": "P8.1",
+          "id": "P8.1",
           "file_name": "page08_panel01.png",
           "coords": {
             "x": 4,
@@ -325,7 +325,7 @@
           "reference": "jutas-memorial.jpg"
         },
         {
-          "panel": "P8.2",
+          "id": "P8.2",
           "file_name": "page08_panel02.png",
           "coords": {
             "x": 4,
@@ -337,7 +337,7 @@
           "reference": "ulf.jpg"
         },
         {
-          "panel": "P8.3",
+          "id": "P8.3",
           "file_name": "page08_panel03.png",
           "coords": {
             "x": 52,
