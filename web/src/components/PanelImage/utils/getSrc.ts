@@ -12,12 +12,12 @@ function getImages(): Record<string, { default: string }> {
     )
 }
 
-function getKey(comic: string, id: PanelId) {
-    const imageKey = (key: string) => key.includes(`${comic}/${id}`)
+function getKey(slug: string, id: PanelId) {
+    const imageKey = (key: string) => key.includes(`${slug}/${id}`)
 
     return Key.parse(Object.keys(getImages()).find(imageKey))
 }
 
-export function getSrc(comic: string, id: PanelId): string {
-    return getImages()[getKey(comic, id)].default
+export function getSrc(slug: string, id: PanelId): string {
+    return getImages()[getKey(slug, id)].default
 }

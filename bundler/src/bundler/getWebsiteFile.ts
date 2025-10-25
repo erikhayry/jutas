@@ -1,4 +1,13 @@
-import {type Comic, type ComicOutput, type Page, type PageOutput, type Panel, PanelOutput, Website,} from "jutas-types";
+import {
+    type Comic,
+    type ComicOutput,
+    type Page,
+    type PageOutput,
+    Panel,
+    type Panel as PanelType,
+    PanelOutput,
+    Website,
+} from "jutas-types";
 import {getComicOutput} from "./getComicOutput.ts";
 
 function getComicFolder(path: string): string {
@@ -7,8 +16,8 @@ function getComicFolder(path: string): string {
     return folders[folders.length - 1] || "";
 }
 
-function toPanel({id, coords}: PanelOutput): Panel {
-    return {id, coords};
+function toPanel(panelOutput: PanelOutput): PanelType {
+    return Panel.parse(panelOutput);
 }
 
 function toPages({panels}: PageOutput): Page {

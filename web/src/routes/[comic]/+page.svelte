@@ -3,16 +3,17 @@
     import PanelImage from "../../components/PanelImage/PanelImage.svelte";
 
     let {data} = $props();
+    const {slug, pages} = data
 </script>
 
-<h1>{data.slug}</h1>
+<h1>{slug}</h1>
 
-<PanelImage alt="TODO" comic={data.slug} id={data.pages[0].panels[0].id}/>
+<PanelImage panel={pages[0].panels[0]} {slug}/>
 
 <ul>
-    {#each data.pages as page, index (page)}
+    {#each pages as page, index (page)}
         <li>
-            <a href={resolve(`/${data.slug}/${index}`)}>{index}</a>
+            <a href={resolve(`/${slug}/${index}`)}>{index}</a>
         </li>
     {/each}
 </ul>

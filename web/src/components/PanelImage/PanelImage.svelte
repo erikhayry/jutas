@@ -1,17 +1,15 @@
 <script lang="ts">
     import {getSrc} from "./utils/getSrc";
-    import type {PanelId} from "jutas-types";
+    import type {Panel} from "jutas-types";
 
     interface Props {
-        comic: string;
-        id: PanelId
-        alt: string
+        slug: string;
+        panel: Panel
     }
 
-
-    let {comic, id, alt}: Props = $props();
-    const src = getSrc(comic, id)
+    let {slug, panel}: Props = $props();
+    const src = getSrc(slug, panel.id)
 </script>
 
 
-<img {alt} {src}/>
+<img alt="TODO" height="auto" {src} width="100%"/>

@@ -1,6 +1,6 @@
 <script lang="ts">
     import {resolve} from '$app/paths';
-    import Img from "../../../components/PanelImage/PanelImage.svelte";
+    import Page from "../../../components/Page/Page.svelte";
 
     let {data} = $props();
     const {slug, page, title} = data
@@ -8,8 +8,6 @@
 
 <h1>{title}</h1>
 
-{#each page.panels as panel (panel)}
-    <Img alt="TODO" comic={slug} id={panel.id}/>
-{/each}
+<Page panels={page.panels} slug={slug}/>
 
 <a href={resolve(`/${slug}`)}>Back</a>
