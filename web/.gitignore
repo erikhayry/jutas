@@ -140,3 +140,4 @@ vite.config.ts.timestamp-*
 
 
 __screenshots__
+/build/
